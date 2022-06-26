@@ -15,7 +15,7 @@ module "core" {
 module "setup" {
   source = "./setup/"
 
-  cluster_name                             = module.base.cluster_id
+  cluster_name                             = module.core.cluster_id
   spot_termination_handler_chart_name      = var.spot_termination_handler_chart_name
   spot_termination_handler_chart_repo      = var.spot_termination_handler_chart_repo
   spot_termination_handler_chart_version   = var.spot_termination_handler_chart_version
